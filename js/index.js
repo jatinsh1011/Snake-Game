@@ -30,7 +30,7 @@ function iscollide(sarr) {
   }
 
   if (
-    sarr[0].x <= 0 || sarr[0].x >= 18   || sarr[0].y >= 18 || sarr[0].y <= 0) {
+    sarr[0].x <= 0 || sarr[0].x >= 35   || sarr[0].y >= 25 || sarr[0].y <= 0) {
     return true;
   }
 }
@@ -52,7 +52,7 @@ function gameEngine() {
       y: snakeArr[0].y + inputDir.y,
     });
     let a = 2;
-    let b = 16;
+    let b = 23;
     food = {
       x: Math.round(a + (b - a) * Math.random()),
       y: Math.round(a + (b - a) * Math.random()),

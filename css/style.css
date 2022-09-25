@@ -16,13 +16,13 @@
 }
 
 #board{
-    background: linear-gradient( rgb(97, 97, 131), rgb(74, 103, 138));
-    width: 90vmin;
-    height: 92vmin; 
+    background: linear-gradient( rgb(78, 196, 111), rgb(31, 219, 21));
+    width: 150vmin;
+    height: 90vmin; 
     border: 2px solid black;
     display: grid;
-    grid-template-rows: repeat(18 , 1fr);
-    grid-template-columns: repeat(18 , 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(35 , 1fr);
 
 }
 
