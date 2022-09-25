@@ -39,6 +39,7 @@ function gameEngine() {
     gameoverSound.play();
     gameSound.pause();
     inputDir = { x: 0, y: 0 };
+    speed =8;
 
     alert("Game Over");
     snakeArr = [{ x: 10, y: 11 }];
