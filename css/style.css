@@ -25,13 +25,29 @@
     grid-template-columns: repeat(35 , 1fr);
 
 }
+#scoreBox{
+    position: absolute;
+    top: 0px;
+    right: 90px;
+    font-size: 39px;
+    font-weight: bold;
+}
 
 .head{
-    background-color: red;
+    background: linear-gradient(red , yellow) ;
+    border: 2px solid purple;
+    border-radius: 9px;
+    transform: scale(1.02);
+
+
 }
 .snake{
     background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
 }
 .food{
-    background-color:yellow;
+    background: linear-gradient(red , purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
 }
