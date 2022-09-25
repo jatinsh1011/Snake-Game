@@ -30,7 +30,7 @@ function iscollide(sarr) {
   }
 
   if (
-    sarr[0].x <= 0 || sarr[0].x >= 35   || sarr[0].y >= 25 || sarr[0].y <= 0) {
+    sarr[0].x <= 0 || sarr[0].x >= 18   || sarr[0].y >= 18 || sarr[0].y <= 0) {
     return true;
   }
 }
@@ -50,14 +50,14 @@ function gameEngine() {
     foodSound.play();
     score +=1;
     scoreBox.innerHTML= "Score: " + score;
-    if (score > 5 && score <10) {
+    if (score >= 5 && score <=10) {
         speed = 9;
         
     }
-    else if (score > 10 && score <13) {
+    else if (score > 10 && score <=13) {
         speed = 13;
         
-    }else if (score > 13 && score <15) {
+    }else if (score > 13 && score <=15) {
         speed =17;
         
     }else if (score > 15) {
@@ -69,7 +69,7 @@ function gameEngine() {
       y: snakeArr[0].y + inputDir.y,
     });
     let a = 2;
-    let b = 23;
+    let b = 17;
     food = {
       x: Math.round(a + (b - a) * Math.random()),
       y: Math.round(a + (b - a) * Math.random()),
